@@ -18,45 +18,6 @@ function atoom_preprocess_html(&$variables) {
 // }
 
 // Add css skin
-$setting_skin = theme_get_setting('built_in_skins', 'atoom');
-if(!empty($setting_skin)){
-	$skin_color = '/css/colors/'.$setting_skin;
-}else{
-	$skin_color = '/css/colors/default.css';
-}
-$css_skin = array(
-	'#tag' => 'link', // The #tag is the html tag - <link />
-	'#attributes' => array( // Set up an array of attributes inside the tag
-	'href' => $base_url.'/'.path_to_theme().$skin_color,
-	'rel' => 'stylesheet',
-	'type' => 'text/css',
-	'id' => 'site-color',
-	'data-baseurl'=>$base_url.'/'.path_to_theme()
-	),
-	'#weight' => 4,
-);
-drupal_add_html_head($css_skin, 'skin');
-
-$bg = theme_get_setting('bg_patterns', 'atoom');
-if(!empty($bg)){
-	$bg_pattern = '/css/bg-patterns/'.$bg;
-}else{
-	$bg_pattern = '';
-}
-$css_skin = array(
-	'#tag' => 'link', // The #tag is the html tag - <link />
-	'#attributes' => array( // Set up an array of attributes inside the tag
-	'href' => $base_url.'/'.path_to_theme().$bg_pattern,
-	'rel' => 'stylesheet',
-	'type' => 'text/css',
-	'id' => 'bg-pattern',
-	'data-baseurl'=>$base_url.'/'.path_to_theme()
-	),
-	'#weight' => 5,
-);
-if ($bg_pattern != ''){
-	drupal_add_html_head($css_skin, 'bg-patterns');
-}
 
 function atoom_form_comment_form_alter(&$form, &$form_state) {
 	$form['comment_body']['#after_build'][] = 'atoom_customize_comment_form';

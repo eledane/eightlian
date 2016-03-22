@@ -1,0 +1,43 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function custom_block_block_info() {
+  $blocks = array();
+  $blocks['custom_block'] = array(
+    'info' => t('My Custom Block'),
+	'cache' => DRUPAL_NO_CACHE,
+  );
+  
+  return $blocks;
+}
+function custom_block_form_alter(&$form, &$form_state, $form_id) {  
+  if ($form_id == 'block_admin_configure' || $form_id == 'block_add_block_form') {
+    $form['settings']['abcd'] = array(
+      '#type' => 'textfield', 
+      '#title' => t('Add placeholder text'), 
+      '#default_value' => isset($block->abcd) ? $block->abcd : '',
+      '#maxlength' => 64,
+      '#description' => 'Override the default placeholder',
+      '#weight' => 2,
+      '#access' => TRUE,
+    );
+    $form['#submit'][] = 'custom_block_submit_function';
+  }
+
+}
+function custom_block_submit_function($form, &$form_state, $delta = ''){ 
+	if ($form_state['values']['form_id'] == 'block_admin_configure' || $form_state['values']['form_id'] == 'block_add_block_form') {
+		if (isset($form_state['values']['abcd']) && $form['settings']['abcd']['#default_value'] != $form_state['values']['abcd']) {
+			db_update('block')
+			->fields(array('abcd' => $form_state['values']['abcd']))
+			->condition('module', $form_state['values']['module'])
+			->condition('delta', $form_state['values']['delta'])
+			->execute();
+		  // Flush all context module cache to use the updated css_class.
+		  if (module_exists('context')) {
+			cache_clear_all('context', 'cache', TRUE);
+		  }
+		}
+	}
+}

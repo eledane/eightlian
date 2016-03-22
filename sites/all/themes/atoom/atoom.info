@@ -1,0 +1,128 @@
+;Theme info
+name = Atoom
+description = Atoom ready for use Industries, School, hospital, corporative, travel, fashion, jewellery and any business.
+package = Core
+version = VERSION
+core = 7.x
+screenshot = 'screenshot.png'
+
+; Add a style sheet
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/font-awesome/css/font-awesome.min.css
+stylesheets[screen][] = css/simpleline-icons/simple-line-icons.css
+stylesheets[all][] = css/et-linefont/etlinefont.css
+stylesheets[all][] = js/animations/css/animations.min.css
+stylesheets[screen][] = css/responsive-leyouts.css
+stylesheets[screen][] = css/shortcodes.css
+stylesheets[all][] = js/style-switcher/color-switcher.css
+stylesheets[all][] = js/mainmenu/bootstrap.min.css
+stylesheets[all][] = js/mainmenu/demo.css
+stylesheets[all][] = js/iconhoverefs/component.css
+stylesheets[all][] = js/slidepanel/slidepanel.css
+stylesheets[all][] = js/masterslider/style/masterslider.css
+stylesheets[all][] = js/masterslider/style/ms-phone-style.css
+stylesheets[all][] = js/masterslider/ms-tablet-style.css
+stylesheets[all][] = js/cubeportfolio/cubeportfolio.min.css
+stylesheets[all][] = js/carouselowl/owl.transitions.css
+stylesheets[all][] = js/carouselowl/owl.carousel.css
+stylesheets[all][] = js/tabs2/tabacc.css
+stylesheets[all][] = js/tabs2/detached.css
+stylesheets[all][] = js/tabs/assets/css/responsive-tabs.css
+stylesheets[all][] = js/tabs/assets/css/responsive-tabs2.css
+stylesheets[all][] = js/tabs/assets/css/responsive-tabs3.css
+stylesheets[all][] = js/tabs/tabwidget/tabwidget.css
+stylesheets[all][] = js/accordion/style_acc.css
+stylesheets[all][] = js/progressbar/ui.progress-bar.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/main-responsive.css
+
+stylesheets[all][] = css/update.css
+
+
+; Add a script
+
+scripts[] = js/universal/jquery.js
+scripts[] = js/style-switcher/styleselector.js
+scripts[] = js/animations/js/animations.min.js
+scripts[] = js/slidepanel/slidepanel.js
+scripts[] = js/mainmenu/bootstrap.min.js
+scripts[] = js/mainmenu/customeUI.js
+scripts[] = js/masterslider/jquery.easing.min.js
+scripts[] = js/masterslider/masterslider.min.js
+scripts[] = js/accordion/jquery.accordion.js
+scripts[] = js/accordion/custom.js
+scripts[] = js/cform/form-validate.js
+scripts[] = js/cubeportfolio/jquery.cubeportfolio.min.js
+scripts[] = js/cubeportfolio/main.js
+scripts[] = js/cubeportfolio/main2.js
+scripts[] = js/cubeportfolio/main3.js
+scripts[] = js/cubeportfolio/main4.js
+scripts[] = js/cubeportfolio/main5.js
+scripts[] = js/cubeportfolio/main6.js
+scripts[] = js/cubeportfolio/main7.js
+scripts[] = js/cubeportfolio/main8.js
+scripts[] = js/cubeportfolio/main9.js
+scripts[] = js/tabs2/index.js
+scripts[] = js/aninum/jquery.animateNumber.min.js
+scripts[] = js/scrolltotop/totop.js
+scripts[] = js/mainmenu/sticky.js
+scripts[] = js/mainmenu/modernizr.custom.75180.js
+scripts[] = js/timeline/modernizr.js
+scripts[] = js/tabs/assets/js/responsive-tabs.min.js
+scripts[] = js/carouselowl/owl.carousel.js
+scripts[] = js/tabs/tabwidget/tabwidget.js
+scripts[] = js/progressbar/progress.js
+scripts[] = js/classyloader/jquery.classyloader.min.js
+scripts[] = js/universal/custom.js
+scripts[] = js/update.js
+
+
+
+;Core regions
+
+
+regions[header_search] = 'Header search'
+regions[header_top_right] = 'Header style3 top right'
+regions[slider_wrap] = 'Header version 4 slider wrap'
+regions[main_menu] = 'Main menu'
+regions[onepage_menu] = 'Onepage menu'
+regions[slider] = 'Slider'
+regions[embed_map] = 'Embed map page contact'
+regions[content] = 'Main Content'
+regions[section] = 'Section'
+regions[blog_masonry] = 'Blog masonry'
+regions[blog_small_image] = 'Blog small image'
+regions[sidebar] = 'Sidebar'
+regions[related_portfolio] = 'Related portfolio'
+regions[footer_style1_col1] = 'Footer style1 first column'
+regions[footer_style1_col2] = 'Footer style1 last column'
+regions[footer] = 'Footer'
+regions[footer_style3] = 'Footer style 3'
+
+
+regions[highlighted] = 'highlighted '
+
+
+
+;Features (core settings)
+features[] = 'logo'
+features[] = 'name'
+
+features[] = 'slogan'
+features[] = 'node_user_picture'
+features[] = 'comment_user_picture'
+features[] = 'comment_user_verification'
+features[] = 'favicon'
+features[] = 'go_to_top_button'
+features[] = 'secondary_menu'
+
+;Breadcrumb
+settings[breadcrumb_display] = 'yes'
+settings[breadcrumb_separator] = ' &#187; '
+settings[breadcrumb_home] = 1
+
+
+version = "7.x"
+project = "Atoom"
+datestamp = "1365027012"

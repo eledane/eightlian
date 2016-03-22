@@ -1,0 +1,4 @@
+name = CustomBlock
+description = A module to display a block of text
+core = 7.x
+files[] = custom_block.module

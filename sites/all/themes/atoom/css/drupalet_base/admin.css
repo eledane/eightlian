@@ -1,0 +1,93 @@
+.form-radios{
+	width:100%;
+	float:left;
+	margin-top:60px!important;
+	clear:both;
+}
+.form-radios input[type=radio]{
+	margin-right:15px;
+	cursor: pointer;
+	background: #e1e1e1;
+}
+.form-radios .form-item{
+	width: 70px;
+	margin: 0 30px 90px 0!important;
+	float: left;
+}
+.form-radios .form-item label{
+	margin-top: -70px!important;
+	border: 2px solid #fff!important;
+	outline: 1px solid #ddd!important;
+	position: absolute!important;
+	display: block;
+	width: 70px;
+	height: 0px;
+	line-height: 30px;
+	padding-top: 70px!important;
+	cursor: pointer;
+	text-align: center;
+	color: #444;
+	border: 1px solid #fff;
+	outline: 2px solid #a3af7f;
+	font-weight: bold;
+	background:#333
+}
+.form-item label[for="edit-built-in-skins-defaultcss"] { background: #f62459; }
+.form-item label[for="edit-built-in-skins-greencss"] { background: #3fc35f; }
+.form-item label[for="edit-built-in-skins-cyancss"] { background: #35d3b7; }
+.form-item label[for="edit-built-in-skins-orangecss"] { background: #ff6e41; }
+.form-item label[for="edit-built-in-skins-lightbluecss"] { background: #37c6f5; }
+.form-item label[for="edit-built-in-skins-bluecss"] { background: #3183d7; }
+.form-item label[for="edit-built-in-skins-purplecss"] { background: #c762cb; }
+.form-item label[for="edit-built-in-skins-bridgecss"] { background: #a5d549; }
+.form-item label[for="edit-built-in-skins-pinkcss"] { background: #fa3aab; }
+.form-item label[for="edit-built-in-skins-slatecss"] { background: #6b798f; }
+.form-item label[for="edit-built-in-skins-yellowcss"] { background: #f2d438; }
+.form-item label[for="edit-built-in-skins-darkredcss"] { background: #970001; }
+.form-item label[for="edit-built-in-skins-springgreencss"] { background: #58cb8e; }
+.form-item label[for="edit-built-in-skins-violetcss"] { background: #7257a3; }
+.form-item label[for="edit-built-in-skins-laurelcss"] { background: #7A997B; }
+.form-item label[for="edit-built-in-skins-turquoisecss"] { background: #2cae8c; }
+.form-item label[for="edit-built-in-skins-silverlimecss"] { background: #69B980; }
+.form-item label[for="edit-built-in-skins-wetasphalcss"] { background: #34495e; }
+.form-item label[for="edit-built-in-skins-greensmokecss"] { background: #9cb265; }
+.form-item label[for="edit-built-in-skins-amethystcss"] { background: #9b59b6; }
+.form-item label[for="edit-built-in-skins-concretecss"] { background: #95a5a6; }
+.form-item label[for="edit-built-in-skins-nephritiscss"] { background: #27ae60; }
+.form-item label[for="edit-built-in-skins-alizarincss"] { background: #e74c3c; }
+.form-item label[for="edit-built-in-skins-burntsiennacss"] { background: #ee6a4c; }
+.form-item label[for="edit-built-in-skins-belizeholecss"] { background: #2980b9; }
+.form-item label[for="edit-built-in-skins-midnightbluecss"] { background: #2c3e50; }
+.form-item label[for="edit-built-in-skins-greenseacss"] { background: #16a085; }
+.form-item label[for="edit-built-in-skins-mediumpurplecss"] { background: #766CE4; }
+.form-item label[for="edit-bg-patterns-"] { background: transparent; }
+
+
+.form-item label[for="edit-bg-patterns-pattern-onecss"] { background: #eee url(../../images/elements/pattern1.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-twocss"] { background: #eee url(../../images/elements/pattern2.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-threecss"] { background: #eee url(../../images/elements/pattern3.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-fourcss"] { background: #eee url(../../images/elements/pattern4.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-fivecss"] { background: #eee url(../../images/elements/pattern5.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-sixcss"] { background: #eee url(../../images/elements/pattern6.png) no-repeat center top;}
+
+.form-item label[for="edit-bg-patterns-pattern-sevencss"] { background: #eee url(../../images/elements/pattern6.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-eightcss"] { background: #eee url(../../images/elements/pattern8.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-ninecss"] { background: #eee url(../../images/elements/pattern9.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-tencss"] { background: #eee url(../../images/elements/pattern10.png) no-repeat center top; }
+
+.form-item label[for="edit-bg-patterns-pattern-elevencss"] { background: #eee url(../../images/elements/pattern11.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-twelvecss"] { background: #eee url(../../images/elements/pattern12.png) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-thirteencss"] { background: #eee url(../../images/elements/pattern13-small-2.jpg) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-fourteencss"] { background: #eee url(../../images/elements/pattern14-small-2.jpg) no-repeat center top;}
+.form-item label[for="edit-bg-patterns-pattern-fifteencss"] { background: #eee url(../../images/elements/pattern15-small-2.jpg) no-repeat center top; }
+.form-item label[for="edit-bg-patterns-pattern-sixteencss"] { background: #eee url(../../images/elements/pattern16-small-2.jpg) no-repeat center top; }
+
+
+.form-radios .form-item-active label{
+	border: 1px solid #fff!important;
+	outline: 2px solid #a3af7f!important;
+	font-weight: bold!important;
+}
+.form-item .form-item{
+	padding:15px 0px!important;
+}
